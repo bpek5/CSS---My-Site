@@ -1,0 +1,213 @@
+a{
+  color: #11999E;
+  font-family: Montserrat, sans-serif;
+  margin: 100px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+body{
+  margin: 0;
+  text-align: center;
+
+  /**This is EMBEDDING the font, basically having the user take the font from gogole's site and apply it to our website.
+  If google font site is down, then my webpage will default to the serif font on the user's machine **/
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  /**
+
+  16px = 100% = 1em
+
+  em is the phonetic pronounciation of "M". 1em means the width of an M, but that's not really true in modern times.
+
+  Also note, Percentages % and em can be added to each other.
+  For example: if BODY tag contains 100% or 1em, and there's a h1 tag with 50% and 2em,
+  the total size of that font will be 150% or 3em font size.
+
+  Pixels, or px, won't change or get added onto since it's "static"
+
+  If you're using 5.625rem, where there's an r before em, it means "root" em, which means forget about the preivously applied
+  format or font size, and only apply this current font size of 5.625em
+
+  If you're using "em", use "rem" instead because it's the most adapable, and less error prone.
+  **/
+  font-size: 90px;
+  margin-top: 0;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+
+  /**I guess this could work too? Maybe depends on site design...
+    width: 10%;
+  /**margin: auto;**/
+
+  /**Written this way is top, right, bottom, left
+  margin: 0 auto 0 auto;
+  **/
+
+  /** Written this way, is top & bottom, then right & left...
+  margin: 0 auto;
+  **/
+}
+
+h2{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3{
+  font-family: 'Montserrat',sans-serif;
+  color: #11999E;
+}
+
+p{
+  color:#40514E;
+  line-height: 2;
+}
+
+hr{
+  border: dotted #66BFBF 6PX;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.top-container{
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.copyright{
+  color: #EAF6F6;
+  font-size: .75rem;
+  padding: 20px 0;
+}
+
+/**
+.middle-container{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.bottom-container{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+**/
+
+.intro{
+  width: 30%;
+  position:relative;
+  margin: auto;
+}
+.top-cloud{
+  position: absolute;
+
+  /** right and top changes the MARGINS, basically it's location on the page relative to the top container**/
+  right: 300px;
+  top: 40px;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.bottom-cloud{
+
+  /**To use this absolute position correctly, the parent needs to be set to relative, otherwise,
+  it will be set relative to the BODY... In this case, we're setting top-container to relative.**/
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.skill-row1{
+  width: 50%;
+  margin: 0 auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill-row2{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.programming-img{
+  max-width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+
+.middle-container{
+  margin: 100px 0;
+}
+
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.learning-img{
+  max-width: 25%;
+  float: right;
+  margin-left: 30px;
+  margin-top: 56px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/**
+.code-skill-description{
+  clear: left;
+}
+
+.skill-2-description{
+  clear: right;
+}**/
+
+
+/**
+Block elements: starts on a new line take up the entire width of the page.
+  Its width cannot be changed.
+Inline elements: elements that does NOT start on a new line, and only takes up width as necessry
+
+Inline-block elements: can set width & height, and does NOT start on a new line. You can change width and height, on same line.
+**/
