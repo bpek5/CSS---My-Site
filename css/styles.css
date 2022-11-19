@@ -145,6 +145,13 @@ hr{
   line-height: 2;
 }
 
+.skill-row3{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
 .programming-img{
   max-width: 20%;
   float: left;
@@ -157,7 +164,8 @@ hr{
 
 .bottom-container{
   background-color: #66BFBF;
-  padding: 50px 0 20px;
+  padding: 40px 0 20px;
+  margin-top: 60px;
 }
 
 .learning-img{
@@ -165,6 +173,15 @@ hr{
   float: right;
   margin-left: 30px;
   margin-top: 56px;
+}
+
+.responsibility-img{
+  max-width: 20%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 56px;
+  padding-top: 30px;
+  padding-bottom: 36px;
 }
 
 .btn {
@@ -181,6 +198,7 @@ hr{
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
+  /* margin-bottom: 200px; */
   text-decoration: none;
 }
 
